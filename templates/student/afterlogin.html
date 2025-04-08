@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student After Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Optional CSS -->
+</head>
+<body>
+    <h1>Welcome to the Student Dashboard</h1>
+    <p>You have successfully logged in.</p>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'studentlogin' %}">Go to Login</a></li>
+            <li><a href="{% url 'studentsignup' %}">Sign Up</a></li>
+            <li><a href="{% url 'student-dashboard' %}">Dashboard</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
